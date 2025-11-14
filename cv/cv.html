@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Cá Nhân - Nguyễn Thái Kha</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+<div class="cv-container">
+  <!-- Cột trái -->
+  <div class="left-column">
+    <img src="avatar.jpg" alt="Ảnh đại diện">
+    <h1>Nguyễn Thái Kha</h1>
+    <p class="title">Student</p>
+
+    <h2>Thông tin cá nhân</h2>
+    <p><strong>Email:</strong> nguyenthaikhahpt1@gmail.com</p>
+    <p><strong>Điện thoại:</strong> 0358393470</p>
+    <p><strong>Địa chỉ:</strong> An Giang, Việt Nam</p>
+    
+    <h2>Kỹ năng</h2>
+
+   
+     <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar"><div class="skill-level" data-level="70%"></div></div>
+    </div>
+     <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar"><div class="skill-level" data-level="60%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar"><div class="skill-level" data-level="50%"></div></div>
+    </div>
+    <h2>Sở thích</h2>
+    <ul>
+      <li>Nghệ thuật</li>
+      <li> Thể thao</li>
+      <li>Du lịch</li>
+    </ul>
+  </div>
+
+  <!-- Cột phải -->
+  <div class="right-column">
+    <div class="section about">
+      <h2>Giới thiệu bản thân</h2>
+      <p>Tôi tên là Nguyễn Thái Kha, sinh ra và lớn lên ở vùng đất An Giang - một vùng đất núi non hùng vĩ và mang đậm những nét văn hóa tâm linh. Hiện nay tôi đang là sinh viên năm nhất ngành công nghệ thông tin của Trường Đại học Sư phạm Thành phố Hồ Chí Minh.</p>
+    </div>
+
+    <div class="section education">
+      <h2>Học vấn</h2>
+      <div>
+        <ul> <h3> Tiến trình học tập</h3>
+          <li><b>2013-2018:</b> Học tập tại Trường tiểu học "B" Phú Hưng.</li>
+          <li><b>2018-2022:</b> Học tập tại Trường THCS Phú Hưng.</li>
+          <li><b>2022-2025:</b> Học tập tại Trường THPT Chu Văn An.</li>
+          <li><b> Hiện nay:</b> Học tập tại Trường Đại học Sư phạm Thành phố Hồ Chí Minh, ngành Công nghệ thông tin.</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="section experience">
+      <h2>Kinh nghiệm làm việc</h2>
+      <p> Đang trong quá trình trau dồi và rèn luyện kỹ năng chuyên môn.</p>
+    </div>
+
+    <div class="section projects">
+      <h2>Dự án tiêu biểu</h2>
+      <p> Hiện tại chưa có</p>
+     
+    </div>
+  
+</div>
+<!-- JavaScript để load thanh kỹ năng -->
+<script>
+  window.addEventListener("load", function() {
+    const skills = document.querySelectorAll(".skill-level");
+    skills.forEach(skill => {
+      const level = skill.getAttribute("data-level");
+      skill.style.width = level;
+      skill.classList.add("loaded");
+    });
+  });
+</script>
+</body>
+</html>
+
+
